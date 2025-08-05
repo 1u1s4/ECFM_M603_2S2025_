@@ -47,7 +47,6 @@ def serie_sin_triples(tol: float = 1e-10) -> Tuple[float, int]:
         if not tiene_triple(n):
             term = 1.0 / n
             S += term
-            print(f"n = {n:,}, S = {S:.10f}")
             if term < tol:          # cota del resto de la serie
                 return S, n
 
